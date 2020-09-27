@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+}
+.main-landing{
+      min-height: 100vh;
+      min-width: 100vw;
+}
+.main-header{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 30px;
+    left: 75%;
+    
+}
+
+.landing-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 96px;
+    position: relative;
+    top: 30vh;
+    right: 40vw;
+    text-align: right;
+    
+}
+
+/* about */
+
+.about-page{
+    background-color: blueviolet;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.about-header{
+    display: flex;
+
+}
+
+/* .circle{
+    height: 350px;
+    width: 350px;
+    background-color: #0602E780;
+    border-radius: 50%;
+} */
+
+
