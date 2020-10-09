@@ -1,7 +1,7 @@
 // SELECTORS 
-
+const aboutLink = document.querySelector
 const colorArr = [
-    "#4c059490", "#357ECD90", "#24C44290", "#E5E33F90", "#E57C90", "#CE141F90", "#0602E790", "#CA14CE90"];
+    "#4c059480", "#357ECD80", "#24C44280", "#E5E33F80", "#E57C80", "#CE141F80", "#0602E780", "#CA14CE80"];
 
 
 // EVENTS
@@ -40,29 +40,10 @@ const colorArr = [
         
     // }
 
-    function navNamecolor(){
-        let firstName = document.querySelector('.first-ab');
-        let fNameArr = firstName.innerText.split('');
-        // console.log(fNameArr);
-        let span = [];
+    function navLinkColors(){
 
-        for(let value of fNameArr){
-            console.log(value)
-            // for(let colorValue of colorArr ){
-            //     // console.log(colorArr)
-            //     let last = colorValue -1;
-            //     if(value.indexOf() == colorValue.indexOf()){
-            //         let spanned = "<span style='color:" + colorValue + ";'>" + value + "</span>"
-            //         span.push(spanned)
-            //     }
-            // }
-
-            let spanned = "<span style='color:" + colorArr[0] + ";'>" + value[0  ] + "</span>"
-                    span.push(spanned)
-            
-        }
-        firstName.innerHTML = span.join('');
-    }  
+    }
+    
 
 
 
@@ -70,4 +51,3 @@ const colorArr = [
 
 // firstNamee();
 // middleName();
-navNamecolor();

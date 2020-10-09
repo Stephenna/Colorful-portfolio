@@ -27,7 +27,7 @@ html, body{
     font-family: poppinR;
     src: url(./fonts/Poppins-Regular.ttf);
 }
-
+/* MAIN */
 .main-landing {
       min-height: 100vh;
       min-width: 100vw;
@@ -55,9 +55,13 @@ html, body{
     
 }
 
+
+
+
+
 /* about */
 .about-content{
-    min-height: 200vh;
+    min-height: 100vh;
     min-width: 100vw;
     background-color: crimson;
     text-align: center;
@@ -66,6 +70,7 @@ html, body{
 .nav-about{
     background-color: darkgrey;
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     min-height: 12vh;
@@ -128,7 +133,7 @@ a{
     /* background-color: rgba(170, 255, 0, 0.468); */
     margin-bottom: 25%;
 }
-img{
+.img-svg > img{
     display: inline-block;
     width: 425px;
     border-radius: 50%;
@@ -146,4 +151,17 @@ img{
     top: 0;
     
 }
+
+
+
+/* projects */
+.project-content{
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: royalblue;
+    text-align: center;
+}
+
+
+
 
