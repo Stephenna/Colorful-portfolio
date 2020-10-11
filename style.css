@@ -61,7 +61,7 @@ html, body{
 
 /* about */
 .about-content{
-    min-height: 100vh;
+    max-height: 100vh;
     min-width: 100vw;
     background-color: crimson;
     text-align: center;
@@ -73,32 +73,33 @@ html, body{
     z-index: 1;
     top: 0;
     width: 100%;
-    min-height: 12vh;
+    min-height: 13vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10%;
+    padding: 0px 8%;
     background-color: #F8F8F8;
+    
 }
 .name-about > h1{
     font-family: ralewayL;
-    font-size: 72px;
+    font-size: 48px;
     position: relative;
     letter-spacing: 3px;
 }
 .first-ab{
-    top: 31px
+    top: 25px
 }
 .mid-ab{
-    top: 5px;
-    left: 11rem;
+    top: 7px;
+    left: 4.3rem;
     padding-bottom: 12px;
 }
 .ul-nav > li{
     display: inline-block;
-    padding-left: 115px;
-    font-family: poppinR;
-    font-size: 35px;
+    padding-left: 10rem;
+    font-family: poppinl;
+    font-size: 26px;
     word-spacing: 2px;
     list-style: none;
 }
@@ -111,13 +112,13 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 0px 15%;
     background-color: #F8F8F8;
 
 }
 .info-about{
-    max-width: 40vw;
+    max-width: 35vw;
     
 }
 
@@ -135,7 +136,7 @@ a{
 }
 .img-svg > img{
     display: inline-block;
-    width: 425px;
+    width: 400px;
     border-radius: 50%;
     position: relative;
     top: 20rem;
@@ -143,8 +144,8 @@ a{
     z-index: 1;
 }
 .circle{
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     background-color: #0602e760;
     border-radius: 50%;
     position: relative;
@@ -158,34 +159,39 @@ a{
 .project-content{
     min-height: 100vh;
     min-width: 100vh;
-    background-color: royalblue;
+    
     text-align: center;
 }
 
 .project-main{
-    background-color: violet;
+    
     margin: auto;
     width: 99vw;
     min-height: 88vh;
     position: relative;
-    top: 13vh;
+    top: 20vh;
 }
 
-.project-1{
+.project-1, 
+.project-2,
+.project-3,
+.project-4{
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 5%;
+    margin: 25px 0px;
 }
+
 .img-1{
     /* background-color: pink; */
     
 }
 .img-1 > img{
     display: inline-block;
-    width: 700px;
-    height: 750px;
+    width: 450px;
+    height: 500px;
     border-radius: 50%;
     z-index: 1;
     position: relative;
@@ -193,25 +199,83 @@ a{
 }
 .img-1 > .shape-1{
     background-color: #e57a0090;
-    width: 700px;
-    height: 750px;
+    width: 450px;
+    height: 500px;
     border-radius: 50%;
     position: absolute;
-    top: 6%;
+    top: 0%;
     left: 1%;
     
 }
-.info-1{
-    background-color: plum;
-    margin-left: 10%;
-    max-height: 600px;
+.info{
+    background-color: #F8F8F8;
+    margin: 0px 5%;
+    max-height: 400px;
+    padding: 40px;
     overflow: scroll;
 }
-.info-1 > h1{
+.info > h1{
     font-family: ralewayL;
-    font-size: 46px;
+    font-size: 32px;
 }
-.info-1 > p{
+.info > p{
     font-family: poppinl;
-    font-size: 24px;
+    font-size: 18px;
+}
+
+.img-2 > img{
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+.img-2 > .shape-2{
+    background-color: #4C059490;
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 29%;
+    right: 1%;
+    
+}
+
+.img-3 > img{
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+.img-3 > .shape-3{
+    background-color: #E5E33F90;
+    width: 450px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    
+}
+
+
+.img-4 > img{
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    z-index: 1;
+    position: relative;
+    top: 0;
+}
+.img-4 > .shape-4{
+    background-color: #357ECD90;
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 76%;
+    right: 1%;
+    
 }
