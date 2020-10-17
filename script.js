@@ -1,53 +1,56 @@
 // SELECTORS 
-const aboutLink = document.querySelector
+
 const colorArr = [
-    "#4c059480", "#357ECD80", "#24C44280", "#E5E33F80", "#E57C80", "#CE141F80", "#0602E780", "#CA14CE80"];
+    "#4c059490", "#357ECD90", "#24C44290", "#E5E33F90", "#E57C90", "#CE141F90", "#0602E790", "#CA14CE90"];
 
 
 // EVENTS
+    document.addEventListener('click', shapes);
+    function shapes(){
+        const newDiv = document.createElement('div');
+        newDiv.classList.add("jsShapeContainer");
+        document.body.appendChild(newDiv);
+        const shaped = document.createElement('div');
+        shaped.classList.add('jsShape');
+        newDiv.appendChild(shaped);
 
+        console.log(newDiv)
+    }
+    shapes()
+ 
 // FUNCTIONS
-    
-    // function firstNamee(){
-    //    let firstName = document.querySelector("#first-name");
-    //     let stephenna = firstName.innerText.split('');
-    //     let spans = [];
+    function colorfulName(){
+        const first = document.querySelector('.first-ab');
+        const firstSplit = first.innerText.split('');
+        const bigSpan = [];
 
-    //     for(let i = 0; i < stephenna.length; i++){
-    //         let colors = colorArr[Math.floor(Math.random() * colorArr.length)];
-    //         let span = "<span style='color: " + colors + ";'>" + stephenna[i].toUpperCase() + "</span>";
+        for(let i = 0; i < firstSplit.length; i++){
+            let colors = colorArr[Math.floor(Math.random() * colorArr.length)];
 
-    //         spans.push(span);
-    //     }
+            let littleSpan = "<span style= 'color:" + colors + ";'>" + firstSplit[i] + "</span>";
 
-    //     firstName.innerHTML = spans.join('');
-    // }
+            bigSpan.push(littleSpan);
+        }
+
+        first.innerHTML = bigSpan.join('');
+
+        const middle = document.querySelector('.mid-ab');
+        const middleSplit = middle.innerText.split('');
+        const biggerSpan = [];
+        for(let i = 0; i < middleSplit.length; i++){
+            let colors = colorArr[Math.floor(Math.random() * colorArr.length)];
+
+            let littleSpan = "<span style='color:" + colors + ";'>" + middleSplit[i] + '</span>';
+
+            biggerSpan.push(littleSpan);
+        }
         
-        
-
-    // function middleName(){
-    //         const midName = document.querySelector('#middle');
-    //         const jemae = midName.innerText.split('');
-    //         const midSpan = [];
-        
-    //         for(let i = 0; i < jemae.length; i++){
-    //             let colors = colorArr[Math.floor(Math.random() * colorArr.length)];
-    //             let span = "<span style='color:" + colors + ";'>" + jemae[i].toUpperCase() "</span>";
-;
-    //             midSpan.push(span);
-    //         }
-    //         midName.innerHTML = midSpan.join('');
-        
-    // }
-
-    function navLinkColors(){
+        middle.innerHTML = biggerSpan.join('')
 
     }
+
     
 
-
-
 // CALLS
+colorfulName();
 
-// firstNamee();
-// middleName();
