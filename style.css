@@ -27,34 +27,6 @@ html, body{
     font-family: poppinR;
     src: url(./fonts/Poppins-Regular.ttf);
 }
-/* MAIN */
-.main-landing {
-    height: 100vh;
-    width: 100vw;
-    background-color: #F8F8F8;
-}
-.main-header {
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    top: 30px;
-    left: 70%;
-    
-}
-
-.landing-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    padding: 50px;
-    font-family: ralewayL;
-    font-size: 72px;
-    position: relative;
-    top: 30vh;
-    right: 40vw;
-    text-align: right;
-    
-}
-
 
 
 
@@ -105,7 +77,7 @@ html, body{
     list-style: none;
 }
 
-a{
+.ul-nav > li a{
     color: black;
     text-decoration: none;
 }
@@ -159,7 +131,7 @@ a{
 
 /* projects */
 .project-content{
-    min-height: 100vh;
+    min-height: 264vh;
     min-width: 100vh;
     text-align: center;
     margin-bottom: 300px;
@@ -281,10 +253,10 @@ a{
 .resume-content{
     /* background-color: red; */
     min-width: 100vw;
-    min-height: 88vh;
+    min-height: 100vh;
     position: relative;
     top: 0;
-    background-color: #ededed;
+    background-color: #f0efef;
 }
 
 .resume-shape-1{
@@ -307,13 +279,12 @@ a{
 .resume-shape-3{
     background-color: #CA14CE90;
     position: absolute;
-    height: 500px;
+    height: 562px;
     width: 700px;
     top: 40%;
     left: 0;
 }
 .resume-main{
-    
     position: absolute;
     top: 8%;
     left: 25%;
@@ -322,20 +293,57 @@ a{
 }
 .resume-main > img{
     position: relative;
-    top: 0;
+    top: 10%;
     left: 15%;
-    height: 75vh;
-    width: 35vw;
+    height: 72vh;
+    min-width: 35vw;
 }
 
 
 
+/* Footer */
 
-/* JS CSS */
-.jsShape{
-    position: sticky;
-    top: auto;
-    width: 200px;
-    height: 300px;
-    background-color: slateblue;
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #F8F8F8;
+    text-align: center;
 }
+.ul-footer > h1{
+    font-family: ralewayL;
+    padding-bottom: 10px; 
+}
+.ul-footer > li{
+    list-style: none;
+    display: inline-block;
+    font-family: ralewayB;
+    padding-left: 30px;
+}
+.ul-footer > li a{
+    text-decoration: none;
+}
+i{
+    font-size: 3rem;
+}
+.fa-instagram{
+    color: #357ECD90;
+}
+.fa-facebook{
+    color: #CA14CE90;
+}
+.fa-linkedin{
+    color: #E5E33F;
+}
+.fa-envelope-open-text{
+    color: #CE141F90;
+}
+.fa-github{
+    color: #24C44290;
+}
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  } 
