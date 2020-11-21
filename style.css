@@ -189,7 +189,6 @@ nav{
     width: 450px;
     height: 500px;
     border-radius: 50%;
-    z-index: 1;
     position: relative;
     top: 0;
 }
@@ -222,7 +221,6 @@ nav{
     display: inline-block;
     width: 450px;
     height: 500px;
-    z-index: 1;
     position: relative;
     top: 0;
 }
@@ -241,7 +239,6 @@ nav{
     width: 450px;
     height: 500px;
     border-radius: 50%;
-    z-index: 1;
     position: relative;
     top: 0;
 }
@@ -261,7 +258,6 @@ nav{
     display: inline-block;
     width: 450px;
     height: 500px;
-    z-index: 1;
     position: relative;
     top: 0;
 }
@@ -383,13 +379,13 @@ i{
           }
       
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 480px){
       body{
           overflow-x: hidden;
       }
       .nav-links{
           position: absolute;
-          z-index: 1;
+          z-index: ;
           right: 0px;
           height: 92vh;
           top: 8vh;
@@ -416,20 +412,47 @@ i{
           transform: translateX(0%);
       }
       .img-svg{
-          display: none;
-      }
-      .main-about{
-          min-height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-      }
-      .info-about > h1{
-          font-size: 18px;
-      }
-      .info-about > p{
-        font-size: 15px;
+        /* background-color: rgba(170, 255, 0, 0.468); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25%;
+        position: absolute;
+        top: 10px;
+    }
+    .img-svg > img{
+        display: inline-block;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: 50px;
+        
+    }
+    .circle{
+        height: 220px;
+        width: 210px;
+        background-color: #0602e760;
+        border-radius: 50%;
+        position: relative;
+        top: 70px;
+        right: 70px;
+    }
+    .main-about{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-about{
+        /* background-color: cornflowerblue; */
+        position: relative;
+        top: 130px;
+    }
+    .info-about > h1{
+        font-size: 18px;
+    }
+    .info-about > p{
+    font-size: 15px;
     }
     
     .project-1 .info{
@@ -450,7 +473,7 @@ i{
         width: 350px;
         height: 400px;
         border-radius: 50%;
-        z-index: 1;
+        /* z-index: 1; */
         position: relative;
         top: 0;
         left: 30%;
@@ -469,10 +492,9 @@ i{
         display: inline-block;
         width: 350px;
         height: 400px;
-        z-index: 1;
         position: relative;
         top: 0;
-        left: 30%;
+        left: 40%;
     }
     .img-2 > .shape-2{
         background-color: #4C059490;
@@ -480,7 +502,7 @@ i{
         height: 400px;
         position: absolute;
         top: 29%;
-        right: 10%;
+        right: 15%;
         
     }
     .img-3 > img{
@@ -488,7 +510,6 @@ i{
         width: 350px;
         height: 400px;
         border-radius: 50%;
-        z-index: 1;
         position: relative;
         top: 30px;
         left: 30%;
@@ -507,10 +528,9 @@ i{
         display: inline-block;
         width: 350px;
         height: 400px;
-        z-index: 1;
         position: relative;
         top: 70px;
-        left: 30%;
+        left: 40%;
     }
     .img-4 > .shape-4{
         background-color: #357ECD90;
@@ -518,7 +538,7 @@ i{
         height: 400px;
         position: absolute;
         top: 80%;
-        right: 10%;
+        right: 15%;
     }
 
     .resume-background{
@@ -542,7 +562,9 @@ i{
         
     }
       .ball{
-          display: none;
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0.7;
       }
   
   }
