@@ -1,7 +1,7 @@
 // SELECTORS 
 
 const colorArr = [
-    "#4c059490", "#357ECD90", "#24C44290", "#E5E33F90", "#E57C90", "#CE141F90", "#0602E790", "#CA14CE90"];
+    "#4c059495", "#357ECD95", "#24C44295", "#E5E33F95", "#E57C95", "#CE141F95", "#0602E795"];
 
 
 // EVENTS
@@ -33,19 +33,6 @@ const colorArr = [
         }
 
         first.innerHTML = bigSpan.join('');
-
-        const middle = document.querySelector('.mid-ab');
-        const middleSplit = middle.innerText.split('');
-        const biggerSpan = [];
-        for(let i = 0; i < middleSplit.length; i++){
-            let colors = colorArr[Math.floor(Math.random() * colorArr.length)];
-
-            let littleSpan = "<span style='color:" + colors + ";'>" + middleSplit[i] + '</span>';
-
-            biggerSpan.push(littleSpan);
-        }
-        
-        middle.innerHTML = biggerSpan.join('')
 
     }
 
@@ -99,7 +86,30 @@ balls.forEach((el, i, ra) => {
 });
 
 
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
+    // Toggle Nav
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+    
+
+    // Animate Links
+      navLinks.forEach((Link, index) =>{
+        if(Link.style.animation){
+          Link.style.animation = '';
+        } else{
+          Link.style.animation = `navLinkFade 0.5s ease forwards ${index/ 7 + 0.5}s`;
+        }
+      });
+      // BURGER ANIMATION
+      burger.classList.toggle('toggle');
+    });
+}
+
+navSlide();
 
 
 
