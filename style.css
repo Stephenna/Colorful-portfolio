@@ -43,7 +43,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    font-family: ralewayR;
+    font-family: ralewayL;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -379,13 +379,15 @@ i{
           }
       
   }
-  @media screen and (max-width: 480px){
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
       body{
           overflow-x: hidden;
       }
       .nav-links{
           position: absolute;
-          z-index: ;
           right: 0px;
           height: 92vh;
           top: 8vh;
