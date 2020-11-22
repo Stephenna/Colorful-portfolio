@@ -380,9 +380,12 @@ i{
       
   }
   @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2){
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3){
       body{
           overflow-x: hidden;
       }
@@ -472,8 +475,8 @@ i{
     
     .img-1 > img{
         display: inline-block;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         border-radius: 50%;
         /* z-index: 1; */
         position: relative;
@@ -482,8 +485,8 @@ i{
     }
     .img-1 > .shape-1{
         background-color: #e57a0090;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         border-radius: 50%;
         position: absolute;
         top: 0%;
@@ -492,16 +495,16 @@ i{
     }
     .img-2 > img{
         display: inline-block;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         position: relative;
         top: 0;
         left: 40%;
     }
     .img-2 > .shape-2{
         background-color: #4C059490;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         position: absolute;
         top: 29%;
         right: 15%;
@@ -509,8 +512,8 @@ i{
     }
     .img-3 > img{
         display: inline-block;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         border-radius: 50%;
         position: relative;
         top: 30px;
@@ -518,8 +521,8 @@ i{
     }
     .img-3 > .shape-3{
         background-color: #E5E33F90;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         border-radius: 50%;
         position: absolute;
         top: 57%;
@@ -528,22 +531,22 @@ i{
     }
     .img-4 > img{
         display: inline-block;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         position: relative;
         top: 70px;
         left: 40%;
     }
     .img-4 > .shape-4{
         background-color: #357ECD90;
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 300px;
         position: absolute;
         top: 80%;
         right: 15%;
     }
 
-    .resume-background{
+    /* .resume-background{
         display: none;
     }
     .resume-main > img{
@@ -553,7 +556,7 @@ i{
         height: 72vh;
         min-width: 37vw;
 
-    }
+    } */
     footer{
         display: flex;
         justify-content: center;
